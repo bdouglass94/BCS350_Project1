@@ -187,3 +187,47 @@ footer a:hover {
     align-items: center;
   }
 }
+
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: 2px solid #39ff14;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+  resize: none;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: none;
+  border-color: #ff3c78;
+}
+
+.contact-section button {
+  padding: 10px;
+  background-color: #39ff14;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #ff3c78;
+  color: #fff;
+}
