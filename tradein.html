@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade-In - GameZify</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">GameZify</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="tradein-section">
+    <h1>Trade-In Your Games</h1>
+    <p>Get credit for your old games and level up your collection!</p>
+    <form id="tradein-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="game">Game Title:</label>
+      <input type="text" id="game" required>
+      <button type="submit" class="cta-btn">Submit Trade-In</button>
+    </form>
+    <p id="confirmation" style="margin-top:20px;color:#39ff14;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 GameZify | Follow us on 
+      <a href="#">Instagram</a>, 
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
