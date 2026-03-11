@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop - GameZify</title>
+  <title>GameZify Shop</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -22,39 +22,55 @@
     </nav>
   </header>
 
-  <!-- Shop Section -->
-  <section class="shop">
-    <h1>All Games</h1>
+  <!-- Featured Games / All Games -->
+  <section class="featured-games">
+    <h2>All Games</h2>
     <div class="games-grid">
-      <div class="game-card">
-        <img src="images/game1.jpg" alt="Game 1">
+      <div class="game-card" data-platform="playstation">
+        <img src="images/game1.jpg" alt="The Last of Us">
         <h3>The Last of Us</h3>
         <p>$59.99</p>
         <button class="add-cart">Add to Cart</button>
       </div>
-      <div class="game-card">
-        <img src="images/game2.jpg" alt="Game 2">
+      <div class="game-card" data-platform="xbox">
+        <img src="images/game2.jpg" alt="Halo 3">
         <h3>Halo 3</h3>
         <p>$59.99</p>
         <button class="add-cart">Add to Cart</button>
       </div>
-      <div class="game-card">
-        <img src="images/game3.jpg" alt="Game 3">
+      <div class="game-card" data-platform="switch">
+        <img src="images/game3.jpg" alt="The Legend of Zelda">
         <h3>The Legend of Zelda</h3>
         <p>$59.99</p>
         <button class="add-cart">Add to Cart</button>
       </div>
+      <!-- Add more game cards here with proper data-platform -->
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 GameZify | Follow us on  
+    <p>&copy; 2026 GameZify | Follow us on 
       <a href="#">Instagram</a>, 
       <a href="#">Facebook</a>
     </p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- JS -->
+  <script>
+    // Filter games based on platform query
+    const params = new URLSearchParams(window.location.search);
+    const platform = params.get('platform'); // "playstation", "xbox", "switch" or null
+    const allGames = document.querySelectorAll('.game-card');
+
+    if (platform) {
+      allGames.forEach(game => {
+        const gamePlatforms = game.dataset.platform.split(' ');
+        if (!gamePlatforms.includes(platform)) {
+          game.style.display = 'none'; // hide non-matching games
+        }
+      });
+    }
+  </script>
 </body>
 </html>
