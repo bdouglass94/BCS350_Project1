@@ -44,7 +44,7 @@ This website is hosted on GitHub pages.
 --------------------------------------------------------------------------------------
 
 ## Timeline / Project Milestones
-![Timeline / Project Milestones](milestones.png)
+![Timeline / Project Milestones](images/milestones.png)
 
 -------------------------------------------------------------------------------------
 
