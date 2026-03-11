@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="logo">GameZify</div>
     <nav>
@@ -21,12 +22,15 @@
     </nav>
   </header>
 
+  <!-- Cart Section -->
   <section class="cart-section">
     <h1>Your Cart</h1>
-    <p>Your cart is empty!</p>
-    <a href="shop.html" class="cta-btn">Shop Now</a>
+    <div id="cart-items"></div> <!-- JS will fill this with cart items -->
+    <p id="total"></p>          <!-- JS will calculate total price -->
+    <a href="shop.html" class="cta-btn">Continue Shopping</a>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 GameZify | Follow us on 
       <a href="#">Instagram</a>, 
@@ -34,6 +38,7 @@
     </p>
   </footer>
 
+  <!-- JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
