@@ -44,14 +44,7 @@ This website is hosted on GitHub pages.
 --------------------------------------------------------------------------------------
 
 ## Timeline / Project Milestones
-
-| Milestone       | Task                                |Week|
-|-----------------|----------------------------------  -|----|
-| Content         | Business concept, audience, mission | 1  |
-| Design          | Wireframe, colors, fonts, layout    | 1  |
-| Interactivity   | Forms, buttons, JS features         | 2  |
-| Repo Setup      | Commit files, GitHub Pages          | 2  |
-| Final Review    | Test all pages & links              | 3  |
+![Timeline / Project Milestones](milestones.png)
 
 -------------------------------------------------------------------------------------
 
