@@ -240,6 +240,66 @@ h1{
   margin-bottom: 20px;
 }
 
+/* Platform Cards */
+.platform-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #39ff14;
+  width: 200px;           /* fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.platform-card img {
+  width: 100%;
+  height: 150px;          /* fixed image height */
+  object-fit: cover;      /* ensures image fills space without distortion */
+  margin-bottom: 10px;
+}
+
+.platform-card h3 {
+  text-align: center;
+  height: 40px;           /* fixed height for title */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Game Cards */
+.game-card {
+  background-color: #1a1a1a;
+  padding: 15px;
+  width: 200px;           /* match platform card width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #39ff14;
+  transition: 0.3s;
+}
+
+.game-card img {
+  width: 100%;
+  height: 150px;          /* same as platform cards */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.game-card a h3 {
+  text-align: center;
+  height: 40px;           /* same as platform cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-card p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
 h2{
   margin-bottom: 20px;
 }
