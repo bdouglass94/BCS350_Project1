@@ -244,12 +244,19 @@ h2{
   margin-bottom: 20px;
 }
 
-/* Make all platform and game images the same size */
-.platform-card img,
-.game-card img {
-  width: 200px;   /* adjust width as needed */
-  height: 150px;  /* adjust height as needed */
-  object-fit: cover; /* keeps aspect ratio, crops if needed */
+
+.platform-card img{
+  width: 100px;  
+  height: 100px;  
+  object-fit: cover; 
   display: block;
-  margin: 0 auto; /* centers the image in the card */
+  margin: 0 auto; 
+}
+
+.game-card img {
+  width: 150px;  
+  height: 200px;  
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
 }
