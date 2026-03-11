@@ -25,6 +25,8 @@ The visual design is to provide a nostlagic feeling gaming website. It utilizes 
 --------------------------------------------------------------------------------------
 
 ## Wireframe
+
+src="images/wireframe.png"
 --------------------------------------------------
 | LOGO | Home | Shop | About | Contact | Cart 🛒 |
 --------------------------------------------------
