@@ -244,19 +244,3 @@ h2{
   margin-bottom: 20px;
 }
 
-
-.platform-card img{
-  width: 100px;  
-  height: 100px;  
-  object-fit: cover; 
-  display: block;
-  margin: 0 auto; 
-}
-
-.game-card img {
-  width: 150px;  
-  height: 200px;  
-  object-fit: cover; 
-  display: block;
-  margin: 0 auto; 
-}
