@@ -25,42 +25,14 @@ The visual design is to provide a nostlagic feeling gaming website. It utilizes 
 --------------------------------------------------------------------------------------
 
 ## Wireframe
-
-## Wireframe
-
 ![Wireframe](images/wireframe.png)
---------------------------------------------------
-| LOGO | Home | Shop | About | Contact | Cart 🛒 |
---------------------------------------------------
 
-|                HERO SECTION                    |
-|         Level Up Your Collection!              |
-|    Games for PlayStation, Xbox, Nintendo       |
-|                [Shop Now]                      |
---------------------------------------------------
-
-|              BROWSE BY PLATFORM                |
-|   PlayStation | Xbox | Nintendo Switch         |
---------------------------------------------------
-
-|               FEATURED GAMES                   |
-|  Game Card | Game Card | Game Card             |
-|  Image     | Image     | Image                 |
-|  Price     | Price     | Price                 |
-| [Add Cart] | [Add Cart]| [Add Cart]            |
---------------------------------------------------
-
-|              TRADE-IN SECTION                  |
-|       Trade-In Your Old Games!                 |
-|            [Trade Now]                         |
---------------------------------------------------
-
-|                    FOOTER                      |
---------------------------------------------------
+---------------------------------------------------------------------------------------
 
 ## Interaction / Functionality
-The website has clickable links and various pages with text and images imbedded into the design. There are buttons to navigate to different consoles and games Shapeand buttons to add these items to cart for checkout.  
---------------------------------------------------------------------------------------
+The website has clickable links and various pages with text and images imbedded into the design. There are buttons to navigate to different consoles and games Shapeand buttons to add these items to cart for checkout. 
+
+---------------------------------------------------------------------------------------
 
 ## Technical Overview
 The website was created using HTML, CSS, and JavaScript languages. 
