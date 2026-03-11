@@ -1,6 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // ======================
+  // PLATFORM FILTERING (SHOP PAGE)
+  // ======================
+  const params = new URLSearchParams(window.location.search);
+  const platform = params.get('platform'); // "playstation", "xbox", "switch"
+  
+  const allGames = document.querySelectorAll('.game-card');
+  if (platform) {
+    allGames.forEach(game => {
+      if (game.dataset.platform !== platform) {
+        game.style.display = 'none'; // hide non-matching
+      }
+    });
+
+    // Update the shop title dynamically
+    const shopTitle = document.getElementById('shop-title');
+    if (shopTitle) {
+      const platformName = platform.charAt(0).toUpperCase() + platform.slice(1);
+      shopTitle.textContent = platformName + " Games";
+    }
+  }
+
+  // ======================
   // ADD TO CART BUTTONS
   // ======================
   const cartButtons = document.querySelectorAll(".add-cart");
@@ -93,5 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
       contactForm.reset();
     });
   }
-
+  
 });
