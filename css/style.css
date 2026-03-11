@@ -12,7 +12,7 @@ body {
   color: #fff;
 }
 
-/* Header */
+/* Header & Navigation */
 header {
   display: flex;
   justify-content: space-between;
@@ -20,49 +20,41 @@ header {
   padding: 20px;
   background-color: #1a1a1a;
 }
-
 header .logo {
   font-size: 1.5rem;
   color: #39ff14;
 }
-
 nav ul {
   display: flex;
   list-style: none;
 }
-
 nav ul li {
   margin-left: 20px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #fff;
   transition: 0.3s;
 }
-
 nav ul li a:hover {
   color: #39ff14;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 20px;
   background-color: #111;
 }
-
 .hero h1 {
   font-size: 2rem;
   color: #ff3c78;
   margin-bottom: 20px;
 }
-
 .hero p {
   font-size: 1rem;
   margin-bottom: 20px;
 }
-
 .cta-btn {
   padding: 10px 30px;
   background-color: #39ff14;
@@ -72,7 +64,6 @@ nav ul li a:hover {
   border-radius: 5px;
   transition: 0.3s;
 }
-
 .cta-btn:hover {
   background-color: #ff3c78;
   color: #fff;
@@ -83,29 +74,37 @@ nav ul li a:hover {
   padding: 50px 20px;
   text-align: center;
 }
-
 .platform-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .platform-card {
   background-color: #1a1a1a;
-  padding: 20px;
   border: 2px solid #39ff14;
   width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   transition: 0.3s;
 }
-
 .platform-card:hover {
   border-color: #ff3c78;
 }
-
 .platform-card img {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
   margin-bottom: 10px;
+}
+.platform-card h3 {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Featured Games Grid */
@@ -113,31 +112,42 @@ nav ul li a:hover {
   padding: 50px 20px;
   text-align: center;
 }
-
 .games-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .game-card {
   background-color: #1a1a1a;
-  padding: 15px;
-  width: 200px;
   border: 2px solid #39ff14;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
   transition: 0.3s;
 }
-
 .game-card:hover {
   border-color: #ff3c78;
 }
-
 .game-card img {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
   margin-bottom: 10px;
 }
-
+.game-card a h3 {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-card p {
+  text-align: center;
+  margin-bottom: 10px;
+}
 .game-card button {
   margin-top: 10px;
   padding: 8px 12px;
@@ -146,7 +156,6 @@ nav ul li a:hover {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .game-card button:hover {
   background-color: #ff3c78;
 }
@@ -158,7 +167,6 @@ nav ul li a:hover {
   text-align: center;
   border-top: 2px solid #39ff14;
 }
-
 .tradein .cta-btn {
   margin-top: 15px;
 }
@@ -170,29 +178,19 @@ footer {
   text-align: center;
   font-size: 0.8rem;
 }
-
 footer a {
   color: #39ff14;
   text-decoration: none;
 }
-
 footer a:hover {
   color: #ff3c78;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .platform-grid, .games-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+/* Contact Section */
 .contact-section {
   padding: 50px 20px;
   text-align: center;
 }
-
 .contact-section form {
   display: flex;
   flex-direction: column;
@@ -200,7 +198,6 @@ footer a:hover {
   margin: 20px auto;
   gap: 15px;
 }
-
 .contact-section input,
 .contact-section textarea {
   padding: 10px;
@@ -211,13 +208,11 @@ footer a:hover {
   font-size: 0.8rem;
   resize: none;
 }
-
 .contact-section input:focus,
 .contact-section textarea:focus {
   outline: none;
   border-color: #ff3c78;
 }
-
 .contact-section button {
   padding: 10px;
   background-color: #39ff14;
@@ -226,81 +221,21 @@ footer a:hover {
   font-weight: bold;
   transition: 0.3s;
 }
-
 .contact-section button:hover {
   background-color: #ff3c78;
   color: #fff;
 }
 
-p{
+/* Headings & Paragraphs */
+p, h1, h2 {
   margin-bottom: 20px;
 }
 
-h1{
-  margin-bottom: 20px;
+/* Responsive */
+@media (max-width: 768px) {
+  .platform-grid,
+  .games-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-/* Platform Cards */
-.platform-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #39ff14;
-  width: 200px;           /* fixed width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: 0.3s;
-}
-
-.platform-card img {
-  width: 100%;
-  height: 150px;          /* fixed image height */
-  object-fit: cover;      /* ensures image fills space without distortion */
-  margin-bottom: 10px;
-}
-
-.platform-card h3 {
-  text-align: center;
-  height: 40px;           /* fixed height for title */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Game Cards */
-.game-card {
-  background-color: #1a1a1a;
-  padding: 15px;
-  width: 200px;           /* match platform card width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #39ff14;
-  transition: 0.3s;
-}
-
-.game-card img {
-  width: 100%;
-  height: 150px;          /* same as platform cards */
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.game-card a h3 {
-  text-align: center;
-  height: 40px;           /* same as platform cards */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.game-card p {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-
-h2{
-  margin-bottom: 20px;
-}
-
