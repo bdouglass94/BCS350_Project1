@@ -57,20 +57,6 @@
   </footer>
 
   <!-- JS -->
-  <script>
-    // Filter games based on platform query
-    const params = new URLSearchParams(window.location.search);
-    const platform = params.get('platform'); // "playstation", "xbox", "switch" or null
-    const allGames = document.querySelectorAll('.game-card');
-
-    if (platform) {
-      allGames.forEach(game => {
-        const gamePlatforms = game.dataset.platform.split(' ');
-        if (!gamePlatforms.includes(platform)) {
-          game.style.display = 'none'; // hide non-matching games
-        }
-      });
-    }
-  </script>
+ <script src="js/script.js"></script>
 </body>
 </html>
